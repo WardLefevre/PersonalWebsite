@@ -1,0 +1,383 @@
+/* CSS */
+@font-face {font-family: DosisExtraLight; src: url("Fonts/DosisExtraLight.ttf");}
+@font-face {font-family: DosisLight; src: url("Fonts/DosisLight.ttf");} 
+@font-face {font-family: OpenSansLight; src: url("Fonts/OpenSansLight.ttf");}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color:whitesmoke;
+}
+
+/* Navigation */
+#containernav {
+  width: 900px;
+  padding: 0px;
+  margin: auto;
+  position: relative;
+}
+
+#nav {
+  top: 0;
+  width: 900px;
+  font-family: "DosisExtraLight", sans-serif;
+  font-size: 30px;
+  position: fixed;
+  text-align: center;
+  background-color:whitesmoke;
+  z-index: 100;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  display: inline;
+  padding: 20px;
+}
+
+#nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  transition: 1s;
+}
+
+#nav a:hover {
+  color: gray;
+}
+
+hr#navhr {
+  border: 0;
+  height: 1px;
+  background: black;
+  margin: 0;
+}
+
+/* Content */
+#containercontent {
+  padding: 30px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.content {
+  position: relative;
+  float:left;
+}
+
+p.title {
+  font-family: "DosisLight", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: -10px;
+}
+
+pre{
+  font-family: "OpenSansLight", sans-serif;
+  font-size: 15px;
+}
+
+p.separator {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  font-family: "DosisExtraLight", sans-serif;
+  font-size: 30px;
+}
+
+p.separator:before, p.separator:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+
+/* Projects */
+  /* Welcome */
+#welcomewelcome {
+  position: relative;
+  left: 130px;
+  top: 10px;
+  padding-bottom: 140px;
+}
+
+#welcomeimg {
+  position: absolute;
+  left: 580px;
+  top: 50px;
+  width: 130px;
+}
+
+#welcomeabout {
+  position: absolute;
+  left: 135px;
+  top: 150px;
+}
+
+#welcomecontact {
+  position: absolute;
+  left: 345px;
+  top: 120px;
+  padding-top: 30px;
+}
+  /* Recordio */
+#recordiocontent{
+  position: relative;
+  left: 45px;
+  top: 10px;
+  padding-right: 300px;
+}
+
+#recordioimg {
+  position: absolute;
+  left: 495px;
+  top: 45px;
+  width: 280px;
+}
+
+  /* Pen Plotter */
+#penplottercontent {
+  position: relative;
+  padding-left: 55px;
+  left: 320px;
+  top: 40px;
+}
+
+#penplotterimg {
+  position: absolute;
+  left: 45px;
+  top: 120px;
+  width: 300px;
+}
+
+  /* Circuitery */
+#circuitrycontent{
+  position: relative;
+  padding-bottom: 80px;
+  padding-right: 300px;
+  left: 10px;
+  top: 50px;
+}
+
+#circuitryimg{
+  position: absolute;
+  left: 480px;
+  top: 85px;
+  width: 330px;
+}
+
+  /* Weather Station */
+#weatherstationcontent{
+  position: relative;
+  padding-bottom: 200px;
+  left: 100px;
+  top: 0px;
+}
+
+#weatherstationimg{
+  position: absolute;
+  left: 135px;
+  top: 200px;
+  width: 200px;
+}
+
+  /* Web Development */
+#webdevelopmentcontent{
+  position: relative;
+  left: 210px;
+  top: 0px;
+}
+
+#webdevelopmentimg{
+  position: absolute;
+  left: 240px;
+  top: 200px;
+  width: 200px;
+}
+
+/* Skillset */
+  /* Knowledge */
+#knowledge {
+  position: relative;
+  text-align: right;
+  padding-right: 120px;
+}
+
+#knowledgecontent{
+  left: 60px;
+}
+
+#knowledgeimg {
+  position: absolute;
+  left: 210px;
+  top: 75px;
+  width: 100px;
+}
+  
+  /* Skills */
+#skills {
+  position: relative;
+  text-align: left;
+  padding-left: 130px;
+}
+
+#skillscontent{
+  left: 150px;
+}
+
+#skillsimg{
+  position: absolute;
+  left: 10px;
+  top: 75px;
+  width: 100px;
+}
+  
+  /* Education */
+#education {
+  position: relative;
+  text-align: right;
+  padding-right: 100px;
+}
+
+#educationcontent{
+  left: 65px;
+  top: 0px;
+}
+
+#educationimg {
+  position: absolute;
+  left: 230px;
+  top: 50px;
+  width: 70px;
+}
+
+  /* Language */
+#language {
+  position: relative;
+  text-align: right;
+  padding-right: 95px;
+}
+
+#languagecontent{
+  left: -175px;
+  top: 115px;
+}
+
+#languageimg {
+  position: absolute;
+  left: 165px;
+  top: 55px;
+  width: 60px;
+}
+
+  /* Machinery */
+#machinery {
+  position: relative;
+  text-align: left;
+  padding-left: 130px;
+}
+
+#machinerycontent{
+  left: -82px;
+}
+
+#machineryimg{
+  position: absolute;
+  left: 10px;
+  top: 90px;
+  width: 100px;
+}
+  
+  /* Programs */
+#programs {
+  position: relative;
+  text-align: right;
+  padding-right: 120px;
+}
+
+#programscontent{
+  left: 126px;
+  top: 15px;
+}
+
+#programsimg {
+  position: absolute;
+  left: 144px;
+  top: 85px;
+  width: 100px;
+}
+  
+  /* Controllers */
+#controllers {
+  position: relative;
+  text-align: left;
+  padding-left: 130px;
+}
+
+#controllerscontent{
+  left: 218px;
+  top: 15px;
+}
+
+#controllersimg{
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  width: 90px;
+}
+
+/* Resume */
+#pdf {
+  position: relative;
+  height: 1200px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+/* Images */
+img.gray {
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  transition: 1s;
+  -webkit-transition: all 1s ease-in-out;
+  }
+
+/* Links */
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
+  
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+ /* Footer */
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+}

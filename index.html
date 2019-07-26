@@ -1,0 +1,255 @@
+<!-- HTML -->
+<!DOCTYPE html >
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Ward Lefevre</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+
+<!-- Navigation -->
+  <body>
+    <div id="containernav">
+      <div id="nav">
+        <ul>
+          <li><a href="#projects" id="navprojects">projects</a></li>
+          <li><a href="#skillset" id="navskillset">skillset</a></li>
+          <li><a href="#containernav" id="navtitle">Ward Lefevre</a></li>
+          <li><a href="#resume" id="navresume">resume</a></li>
+          <li><a href="#welcomecontact" id="navcontact">contact</a></li>
+        </ul>
+        <hr id="navhr"/>
+      </div>
+
+<!-- Welcome -->
+      <div id="containercontent">
+
+        <!-- Welcome to my Webiste -->
+        <div class="content">
+          <pre id="welcomewelcome">
+<p class="title"><span id="text"></span><span id="blinker">|</span></p>
+As a kid, electronics seemed like magic. I was fascinated
+how such tiny devices had immense capabilities. And like
+magic tricks, I had to figure it out! This has led me to
+my passion. Hacking all things tech-related, I created a
+plethora of projects. Discover them on this website.
+          </pre>
+
+          <img id="welcomeimg" src="Images/Welcome.jpg" alt="welcomeimg" class="gray"/>
+
+          <pre id="welcomeabout">
+<p class="title"><span id="text2"></span><span id="blinker2"></span></p>
+ <img height="16" src="Icons/Baby.svg" alt="baby"/>  <a  id="birth" href="javascript:;" onclick="javascript:birth();"></a>
+<img height="16" src="Icons/Home.svg" alt="home"/> <a id="location" target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/yDH18NQ2fmiEgjE98">Belgium, Londerzeel</a>
+ <img height="16" src="Icons/Graduate.svg" alt="graduate"/> <a id="studies" target="_blank" rel="noopener noreferrer" href="http://onderwijsaanbodmechelenantwerpen.thomasmore.be/opleidingen/n/SC_51844890.htm#bl=02">Embedded Electronics</a>
+          </pre>
+
+          <pre id="welcomecontact">
+<p class="title"><span id="text3"></span><span id="blinker3"></span></p>
+<img height="16" src="Icons/Envelope.svg" alt="envelope"/>  <a id="mail" href="javascript:;" onclick="copymail();">wardlefevre&#64;pm.me</a>
+<img height="16" src="Icons/Phone.svg" alt="phone"/>  <a id="tele" href="javascript:;" onclick="copytele();">0471 30 44 00</a>
+<img height="16" src="Icons/Github.svg" alt="github"/>  <a id="github" target="_blank" rel="noopener noreferrer" href="https://github.com/WardLefevre?tab=projects">Repositories</a>&emsp;&emsp;&emsp;&emsp;
+          </pre>
+        </div>
+
+<!-- Projects -->
+        <div style="clear:both;" id="projects"></div>
+        <p class="separator">projects</p>
+
+        <!-- Recordio -->
+        <div class="content" >
+          <pre id="recordiocontent">
+<p class="title">Recordio</p>
+Recordio is an alarm clock radio using the new Digital Audio
+Broadcasting (DAB+) standard. Its name is a contraction of
+'Record your radio', what refers to the storage capabilities
+of the radio. A user can choose to record his favourite
+program, and listen to it later on.
+
+The radio is controlled by the STM32F746NG board from ST,
+connected trough a PCB shield with a T3B DAB module from
+KeyStone. I designed the PCB myself with KiCAD and have 
+written the software with CubeMX and TouchGFX from ST.
+
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/WardLefevre?tab=projects">Keep up with my progress on Github. <img height="12" src="Icons/Paperclip.svg" alt="paperclip"/></a>
+          </pre>
+
+<img id="recordioimg" src="Images/Recordio.jpg" alt="recordioimg" class="gray"/>
+        </div>
+
+        <!-- Pen Plotter -->
+        <div class="content">
+          <pre id="penplottercontent">
+<p class="title">Pen Plotter</p>
+A pen plotter is a robot whose sole function is to guide
+a pen. It is capable of drawing essentially anything that
+can be composed from a set of lines. Your desired text or
+drawing must first be converted to G-Code. The data will
+then be read into the controller, after which the chosen
+pen can be correctly driven.
+
+It is made with two old DVD players placed perpendicular
+on each other, driven by stepper motors. All controlled
+by an XC888 controller,<a target="_blank" rel="noopener noreferrer" href="https://github.com/WardLefevre?tab=projects"> which I programmed in assembly. <img height="12" src="Icons/Paperclip.svg" alt="paperclip"/></a>
+          </pre>
+
+<img id="penplotterimg" src="Images/Penplotter.jpg" alt="penplotterimg" class="gray"/>
+        </div>
+
+        <!-- Circuitery -->
+        <div class="content">
+          <pre id="circuitrycontent">
+<p class="title">Circuitry</p>
+I have build various electronic circuitery during my studies.
+From instrumentation/multistage amplifiers to voltage regulators
+and a BAM modulator-demodulator. In the picture on the right
+you can see the modulation of a BAM signal on the left, which
+is being demodulated again on the right. <a target="_blank" rel="noopener noreferrer" href="https://github.com/WardLefevre?tab=projects">Schematics on Git. <img height="12" src="Icons/Paperclip.svg" alt="paperclip"/></a>
+          </pre>
+
+<img id="circuitryimg" src="Images/Circuitery.jpg" alt="circuitryimg" class="gray"/>
+        </div>
+
+        <!-- Weather Station -->
+        <div class="content">
+          <pre id="weatherstationcontent">
+<p class="title">Weather Station</p>
+View the current weather and forecasts
+by using an GUI on the touch screen
+of the STM32F749NG discovery board.
+Data is obtained via Weather API from
+OpenWeather using TCP/IP protocol.
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/WardLefevre?tab=projects">View my code on Github. <img height="12" src="Icons/Paperclip.svg" alt="paperclip"/></a>
+          </pre>
+
+<img id="weatherstationimg" src="Images/Weatherstation.jpg" alt="weatherstationimg" class="gray"/>
+        </div>
+
+        <!-- Web Development-->
+        <div class="content">
+          <pre id="webdevelopmentcontent">
+<p class="title">Web Development</p>
+Using the latest web technologies, I
+programmed a few websites during my
+free time. Including this website!
+I also made a webshop complete with
+a shopping cart and payment system.
+<a target="_blank" rel="noopener noreferrer" href="https://github.com/WardLefevre?tab=projects">You can find all my websites here. <img height="12" src="Icons/Paperclip.svg" alt="paperclip"/></a>
+          </pre>
+
+<img id="webdevelopmentimg" src="Images/Webdevelopment.jpg" alt="webdevelopmentimg" class="gray"/>
+        </div>
+
+
+<!-- Skillset -->
+        <div style="clear:both;" id="skillset"></div>
+        <p class="separator">skillset</p>
+
+        <div id="knowledgecontent" class="content">
+          <p class="title">Knowledge</p>
+          <img id="knowledgeimg" src="Images/Knowledge.png" alt="knowledgeimg" class="gray"/>
+          <pre id="knowledge">
+Digital and analog electronics
+Embedded systems
+Circuit design
+Datacommunication
+Signal processing
+Measurement technology
+Industrial networks
+          </pre>
+        </div>
+
+        <div id="skillscontent" class="content">
+          <p class="title">Skills</p>
+          <img id="skillsimg" src="Images/Skills.png" alt="skillsimg" class="gray"/>
+          <pre id="skills">
+Embedded C
+Assembly
+VHDL
+PLC: LAD & STL
+PCB design
+SPICE
+Web development: JS
+          </pre>
+        </div>
+
+        <div id="educationcontent" class="content">
+          <p class="title">Education</p>
+          <img id="educationimg" src="Images/Education.png" alt="educationimg" class="gray"/>
+          <pre id="education">
+PBA Elektronica-ICT TMMA SKW
+Driver license B
+Willing to get KNX, VCA, ...
+          </pre>
+        </div>
+
+        <div id="languagecontent" class="content">
+          <p class="title">Language</p>
+          <img id="languageimg" src="Images/Language.png" alt="languageimg" class="gray"/>
+          <pre id="language">
+Dutch (Moedertaal)
+English (Excellent)
+French (Un petit peu)
+          </pre>
+        </div>
+        
+        <div id="machinerycontent" class="content">
+          <p class="title">Machinery</p>
+          <img id="machineryimg" src="Images/Machinery.png" alt="machineryimg" class="gray"/>
+          <pre id="machinery">
+Measuring equipment
+Oscilloscope
+Logic Analyzer
+Spectrumanalyzer
+Function generator
+Soldering station
+Reflow oven
+Pick and place
+          </pre>
+        </div>
+
+        <div id="programscontent" class="content">
+          <p class="title">Programs</p>
+          <img id="programsimg" src="Images/Programs.png" alt="programsimg" class="gray"/>
+          <pre id="programs">
+Visual Studio
+System Workbench
+STM32CubeMX
+Vivado
+KiCAD
+PSpice
+Putty & Tera Term
+Microsoft Office
+          </pre>
+        </div>        
+
+        <div id="controllerscontent" class="content">
+          <p class="title">Controllers</p>
+          <img id="controllersimg" src="Images/Controllers.png" alt="controllersimg" class="gray"/>
+          <pre id="controllers">
+XC888 (8 bit)
+STM32F7 (32 bit)
+Artix-7 (FPGA)
+S7-300 (PLC)
+Ardiuno UNO
+          </pre>
+        </div>
+
+<!-- Resume -->
+        <div style="clear:both;"  id="resume"></div>
+        <p class="separator">resume</p>
+          <div id="pdf">
+            <object data="Files/Resume.pdf?#zoom=85" type="application/pdf" width="90%" height="90%" >
+              <pre><a href="Files/Resume.pdf">Error displaying the PDF, download it here instead.</a></pre>
+            </object>
+          </div>
+
+        <div style="clear:both;"></div>
+      </div>
+    </div>
+    <div class="footer">
+        <pre>This website and all the presented content is made by Ward Lefevre.</pre>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
